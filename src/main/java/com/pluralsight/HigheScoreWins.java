@@ -27,9 +27,18 @@ public class HigheScoreWins {
         int homeScore = Integer.parseInt(teamsScore[0]);
         int awayScore = Integer.parseInt(teamsScore[1]);
 
+        //if/else statement to check which team has the most points else its a tie
+        if(homeScore > awayScore){
+                System.out.println("Winner: " + homeTeam);
+        }
+        else if(homeScore < awayScore){
+                System.out.println("Winner: " + awayScore);
+        }
+        else{
+                String tie = "tie";
+                System.out.println("Winner: " + tie + "!");
+        }
 
-        System.out.println(teams);
-        System.out.println(score);
 
     }
 }
